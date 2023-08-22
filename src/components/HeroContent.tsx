@@ -30,7 +30,7 @@ const HeroContent: FC<HeroContentType> = ({
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className={`flex flex-col items-center justify-between py-[4%] w-full h-screen bg-no-repeat`}
+      className="flex flex-col items-center justify-between py-[4%] w-full h-screen bg-no-repeat pt-16"
     >
       <div className={`flex flex-col items-center gap-2 ${"text-" + color}`}>
         <h1 className="text-4xl font-semibold">{title}</h1>
@@ -38,9 +38,8 @@ const HeroContent: FC<HeroContentType> = ({
         {/* <h3 className="text-xs">After Federal Tax Credit</h3> */}
       </div>
       <div
-        className={`flex flex-col sm:flex-row justify-center gap-3 px-4 w-full ${
-          "text-" + color
-        }`}
+        className={`flex flex-col sm:flex-row justify-center gap-3 px-4 w-full ${"text-" + color
+          }`}
       >
         {buttonList.map((button) => (
           <Button variant={button.variants}>{button.title}</Button>

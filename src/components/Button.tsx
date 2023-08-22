@@ -12,9 +12,12 @@ const buttonVariants = cva(
                 outline: "text-white border border-[3px] border-white",
                 black: "text-white bg-black",
                 white: "text-black bg-slate-200",
+                textWhite: "text-white",
+                navMenuBtn: "text-white py-2 px-4 bg-[#0000000D]"
             },
             size: {
                 default: "h-9 px-4 py-2 w-full sm:w-60",
+                base: ""
             },
         },
         defaultVariants: {
